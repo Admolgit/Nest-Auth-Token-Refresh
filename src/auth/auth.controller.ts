@@ -5,15 +5,15 @@ import { RegisterDto } from './dto/register.dto';
 @Controller('auth')
 export class AuthController {
   constructor(private readonly authService: AuthService) {}
-  
-  @Post("/register")
+
+  @Post('/register')
   async registerUser(@Body() registerUser: RegisterDto) {
-    return await this.authService.registerUser(registerUser)
+    return await this.authService.registerUser(registerUser);
   }
 
-  @Post("/login")
+  @Post('/login')
   async LoginUser(@Body() loginUser: RegisterDto) {
-    return await this.authService.login(loginUser)
+    return await this.authService.login(loginUser);
   }
   @Post('refresh')
   async refreshToken(@Body('refreshToken') refreshToken: string) {

@@ -15,7 +15,7 @@ Check implementation for the coding part.
 And to make sure the database and queries is more optimize, the following practice and steps was followed:
 Indexing: Indexes are added on foreign key columns (level_id, lesson_id) to speed up JOIN operations.
 Relationships: Proper use of @ManyToOne and @OneToMany ensures efficient querying and data integrity.
-Scalability: The schema is designed to be easily extendable, allowing for future modifications like adding new entities or relationships.
+Scalability: The schema is designed to be easily extendable, allowing for future modifications like adding new entities or relationships. The entities also 
 
 
 # 3 Data Model Improvements
